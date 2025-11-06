@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Technologies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6c757d;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6c757d;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #6c757d;
+        }
+
+        main {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #343a40;
+        }
+
+        .wave {
+            margin: 30px auto;
+            width: 60px;
+            height: 20px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 20"><path d="M0,10 Q15,0 30,10 T60,10" stroke="%236c757d" stroke-width="2" fill="none"/></svg>') no-repeat center;
+            background-size: contain;
+        }
+
+        .tech-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .tech-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 280px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .tech-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #343a40;
+        }
+
+        .tech-card p {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .hero-image {
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #343a40;
+            color: #adb5bd;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 992px) {
+            .tech-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tech-card {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 28px;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                padding: 15px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-image {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo"><a href="index.html">main</a></div>
+
+                <nav id="main-nav">
+                    <a href="page4.html">Page 4</a>
+                    <a href="page5.html">Page 5</a>
+                    <a href="page2.html">Page 2</a>
+                    <a href="page1.html">Page 1</a>
+                    <a href="page3.html">Page 3</a>
+                </nav>
+                <div class="mobile-menu" id="mobile-menu">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Top Songs</h1>
+            <div class="wave"></div>
+
+<div class="tech-cards">
+    <div class="tech-card">
+        <h3>Bleed It Out</h3>
+        <p><strong>Minutes to Midnight (2007)</strong><br>"I bleed it out, digging deeper just to throw it away..."</p>
+    </div>
+    <div class="tech-card">
+        <h3>Shadow of the Day</h3>
+        <p><strong>Minutes to Midnight (2007)</strong><br>"And the shadow of the day will embrace the world in grey..."</p>
+    </div>
+    <div class="tech-card">
+        <h3>Papercut</h3>
+        <p><strong>Hybrid Theory (2000)</strong><br>"It's like I'm paranoid, lookin' over my back..."</p>
+    </div>
+</div>
+ <div class="hero-image">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/6081d3ecea983673396accac/Asian-woman-wearing-vr-glasses/0x0.jpg?crop=3287,2192,x0,y0,safe&height=474&width=711&fit=bounds" alt="Жінка у VR-окулярах">
+            </div>
+<footer>
+    <p><strong>Leave Out All the Rest</strong> — Minutes to Midnight (2007)<br>"When my time comes, forget the wrong that I've done..."</p>
+</footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.getElementById('main-nav');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('#main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
